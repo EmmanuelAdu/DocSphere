@@ -9,12 +9,8 @@ app.use(morgan('combined'))
 app.use(cors())
 app.use(bodyParser.json())
 
-app.get('/status', (req, res) => {
-    res.send("{message: 'Hello World'}")
-})
-
-app.get('/', (req, res) => {
-    res.send('Welcome to my API')
+app.post('/register', (req, res) => {
+  res.send("Welcome to my API")
 })
 
 app.listen(process.env.PORT || 8081)
