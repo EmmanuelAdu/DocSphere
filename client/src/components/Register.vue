@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import AuthenticationService from '@/services/AuthenticationService'
 
 export default {
   data () {
@@ -17,13 +18,12 @@ export default {
     }
   },
   methods: {
-    register () {
-      console.log('register button was clicked', this.email, this.password)
-    }
-  },
-  watch: {
-    email (value) {
-      console.log('email has changed', value)
+    async register () {
+      const response = await AuthenticationService.register({
+        email: this.email,
+        password: this.password
+      })
+      console.log(response.data)
     }
   }
 }
