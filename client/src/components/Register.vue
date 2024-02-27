@@ -23,7 +23,7 @@ export default {
         email: this.email,
         password: this.password
       })
-      console.log(response.data)
+      console.log(response.data) // printing the result after the register is hit
     }
   }
 }
