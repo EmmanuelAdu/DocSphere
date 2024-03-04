@@ -5,7 +5,7 @@
       <div class="container">
         <nav>
           <a href="#">
-            <img src="#" alt="brand-log">
+            <img src="#" alt="brand-logo">
           </a>
           <ul>
             <li><a href="#">Services</a></li>
