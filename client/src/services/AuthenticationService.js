@@ -1,3 +1,6 @@
+/**
+ * Endpoints for making API calls
+ */
 import Api from '@/services/Api'
 
 export default {

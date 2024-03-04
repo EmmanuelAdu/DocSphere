@@ -1,0 +1,95 @@
+@import url('./font.css');
+@import url('./utilities.css');
+@import url('./feel.css');
+@import url('./form.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+
+header {
+    padding: 10px 0;
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
+    z-index: 99;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+header nav ul li {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header nav ul li a {
+    display: block;
+    color: #4A4D50;
+}
+
+/* hero */
+#hero {
+  background-color: #f8f8f8;
+}
+
+#hero .hero_content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+#hero .hero_content-wrapper>div:nth-child(1) {
+  display: grid;
+  place-content: center;
+  padding: 5rem 0;
+  min-width: 450px;
+}
+
+.hero_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover
+}
+
+#hero .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 3.48px 13.052px #0000000d;
+  padding: 3rem;
+  width: 100%;
+  gap: 3rem;
+  margin-top: -5px;
+}
+
+#hero .info h3 {
+  color: #202124;
+  max-width: 500px;
+}
+
+#hero .info p {
+  text-align: left;
+  color: #1E1E1E;
+}
