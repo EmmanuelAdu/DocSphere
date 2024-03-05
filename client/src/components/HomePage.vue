@@ -14,7 +14,7 @@
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">SignIn</a></li>
-            <li><a href="#" class="btn btn-secondary">Get Started</a></li>
+            <li><router-link to="/register" class="btn btn-secondary">Get Started</router-link></li>
           </ul>
           <div class="menu-toggler">
             <img src="#" class="hamburger-menu" alt="">
