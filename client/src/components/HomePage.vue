@@ -13,7 +13,7 @@
             <li><a href="#">HealthTips</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><a href="#">SignIn</a></li>
+            <li><router-link to="/login">SignIn</router-link></li>
             <li><router-link to="/register" class="btn btn-secondary">Get Started</router-link></li>
           </ul>
           <div class="menu-toggler">

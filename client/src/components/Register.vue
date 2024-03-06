@@ -3,17 +3,18 @@
     <Header/>
     <div class="container">
     <div class="form-container">
-      <h2>Register for Telemedicine</h2>
+      <h2>Register for DocSphere</h2>
       <form @submit.prevent="register">
         <input type="email" placeholder="Email" v-model="email">
         <input type="password" placeholder="Password" v-model="password">
-        <button type="submit">Register</button>
+        <button @click="register" type="submit">Register</button>
       </form>
       <div class="social-icons">
         <span>Or register with:</span>
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-google"></i></a>
       </div>
+      <div class="error" v-html="error"/>
     </div>
   </div>
   </div>
@@ -52,6 +53,9 @@ export default {
 </script>
 
 <style scoped>
+.error {
+  color: red;
+}
 .container {
   display: flex;
   justify-content: center;
