@@ -15,5 +15,9 @@ module.exports = {
       POST: process.env.DB_HOST || 'localhost',
       PORT: process.env.DB_PORT || 3306
     }
+  },
+  authentication: {
+    jwtSecret: process.env.JWT_SECRET || 'secret'
   }
 }
+console.log("JWT Secret Exported:", module.exports.authentication.jwtSecret);
