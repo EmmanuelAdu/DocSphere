@@ -1,7 +1,7 @@
 /**
  * Allows All route endpoints authentication
  */
-const { User } = require('../models');
+const { User } = require('../models')
 const jwt = require('jsonwebtoken')
 const config = require('../config/config')
 // Generating a jsonwebtoken for authentication during signIn
@@ -19,19 +19,20 @@ function jwtSignUser(newUser) {
 module.exports = {
   async register(req, res) {
     try {
-      const existingUser = await User.findOne({ where: { email: req.body.email } });
+      const existingUser = await User.findOne({ where: { email: req.body.email } })
       if (existingUser) {
-        return res.status(400).send({ error: "This email is already in use" });
+        return res.status(400).send({ error: "This email is already in use" })
       }
       
       const newUser = await User.create({
         email: req.body.email,
         password: req.body.password
-      });
+      })
 
-      res.status(201).send({
-        message: `User with email ${newUser.email} created successfully`
-      });
+      res.send({
+        newUser: newUser.toJSON(),
+        token: jwtSignUser(newUser.toJSON())
+      })
     } catch (error) {
       console.error("Error registering user:", error); // Add this line to log the error
       res.status(500).send({ error: "An error occurred while registering the user" });
@@ -64,4 +65,4 @@ module.exports = {
       console.log(error)
     }
   }
-};
+}

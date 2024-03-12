@@ -2,7 +2,7 @@
  * module function that defines sequelize object `User` with corresponding datatypes
  * for its attributes
  */
-const Promise = require('bluebird')
+const Promise = require('bluebird') // bluebird for calling promises
 const bcrypt = Promise.promisifyAll(require('bcrypt-nodejs'))
 
 // Function to hash password

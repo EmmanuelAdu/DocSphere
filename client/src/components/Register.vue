@@ -43,6 +43,7 @@ export default {
           email: this.email,
           password: this.password
         })
+        this.$router.push('/login'); // Redirect to login page
         // Handle successful registration
       } catch (error) {
         this.error = error.response.data.error

@@ -3,7 +3,7 @@
       <Header/>
       <div class="container">
       <div class="form-container">
-        <h2>Login For DocSphere</h2>
+        <h2>Login To Your Account</h2>
         <form @submit.prevent="register">
           <input type="email" placeholder="Email" v-model="email">
           <input type="password" placeholder="Password" v-model="password">
