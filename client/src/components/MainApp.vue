@@ -1,27 +1,32 @@
 // Main Page for the application
 <template>
-    <div class="container">
-      <SideBar />
-      <Navbar />
-      <!-- Other content -->
+    <div>
+        <div class="container">
+            <SideBar />
+            <Navbar />
+            <!-- Other content -->
+        </div>
+        <Contact />
     </div>
-  </template>
+</template>
   
-  <script>
-  import SideBar from './SideBar.vue';
-  import Navbar from './Navigation.vue';
-  
-  export default {
+<script>
+import SideBar from './SideBar.vue';
+import Navbar from './Navigation.vue';
+import Contact from './Contact.vue'
+
+export default {
     components: {
-      SideBar,
-      Navbar
+        SideBar,
+        Navbar,
+        Contact
     }
-  }
-  </script>
+}
+</script>
   
-  <style>
-  .container {
+<style>
+.container {
     display: flex;
-  }
-  </style>
+}
+</style>
   

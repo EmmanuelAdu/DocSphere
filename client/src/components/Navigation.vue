@@ -38,7 +38,6 @@ export default {
     justify-content: space-between;
     align-items: center;
     margin-left: 100px;
-    position: sticky;
 }
 
 .navbar-content {
