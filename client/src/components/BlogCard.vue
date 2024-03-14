@@ -3,15 +3,16 @@
         <img src="../assets/Doctor.jpg" :alt="altText">
         <h2>{{ title }}</h2>
         <p>{{ description }}</p>
-        <button ref="myButton" @mouseover="showCalendarPopup" @mouseleave="hideCalendar" class="btn">
+        <button ref="myButton" @mouseover="showCalendarPopup" class="btn">
             Book Appointment
             <span v-if="showCalendar" class="calendar-icon">
             </span>
         </button>
         <div class="calendar-container" v-if="showCalendar">
-            <div :class="{'calendar-popup': 'true', 'active':'showCalender'}" :style="{ zIndex: 1000 }">
+            <div :class="{ 'calendar-popup': 'true', 'active': 'showCalender' }" :style="{ zIndex: 1000 }">
                 <p>Select an appointment date:</p>
                 <input type="date" v-model="selectedDate" @change="submitAppointment">
+                <button @click="submitClicked = true; submitAppointment()">Submit</button>
             </div>
         </div>
     </div>
@@ -54,8 +55,16 @@ export default {
             console.log("Calendar hidden");
         },
         submitAppointment() {
-            alert('Appointment booked for ' + this.selectedDate);
-            this.selectedDate = null; // Clear selected date after submission
+            // Check if the submit button was clicked
+            if (this.submitClicked) {
+                if (this.selectedDate) {
+                    alert('Appointment booked for ' + this.selectedDate);
+                    this.selectedDate = null; // Clear selected date after submission
+                    this.hideCalendar(); // Hide the calendar popup after booking
+                } else {
+                    alert('Please select a date for appointment!');
+                }
+            }
         },
     },
 };
@@ -107,14 +116,18 @@ export default {
 }
 
 .calendar-icon {
-  font-family: FontAwesome; /* Assuming you're using Font Awesome */
-  content: "\f073"; /* Font Awesome code for calendar icon */
-  font-size: 14px;
-  margin-left: 5px;
-  color: #999;
+    font-family: FontAwesome;
+    /* Assuming you're using Font Awesome */
+    content: "\f073";
+    /* Font Awesome code for calendar icon */
+    font-size: 14px;
+    margin-left: 5px;
+    color: #999;
 }
+
 .calendar-container {
-    position: relative; /* Ensure absolute positioning is relative to this container */
+    position: relative;
+    /* Ensure absolute positioning is relative to this container */
 }
 
 .calendar-popup {
@@ -131,5 +144,30 @@ export default {
 
 .calendar-popup.active {
     display: block;
+}
+
+.calendar-popup input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the submit button */
+.calendar-popup button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+.calendar-popup button:hover {
+    background-color: #3f4041;
 }
 </style>
