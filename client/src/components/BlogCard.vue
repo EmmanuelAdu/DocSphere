@@ -9,7 +9,7 @@
             </span>
         </button>
         <div class="calendar-container" v-if="showCalendar">
-            <div class="calendar-popup" :style="{ zIndex: 1000 }">
+            <div :class="{'calendar-popup': 'true', 'active':'showCalender'}" :style="{ zIndex: 1000 }">
                 <p>Select an appointment date:</p>
                 <input type="date" v-model="selectedDate" @change="submitAppointment">
             </div>
