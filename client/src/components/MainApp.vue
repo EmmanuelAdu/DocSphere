@@ -31,5 +31,9 @@ export default {
 .container {
     display: flex;
 }
+
+body{
+    background-color: rgb(210, 231, 235);
+}
 </style>
   

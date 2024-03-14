@@ -2,7 +2,7 @@
     <div class="card">
         <img src="../assets/Doctor.jpg" :alt="altText">
         <h2>{{ title }}</h2>
-        <p>{{description}}</p>
+        <p>{{ description }}</p>
         <button class="btn">Book Appointment</button>
     </div>
 </template>
@@ -39,6 +39,7 @@ export default {
     padding: 12px;
     border-radius: 12px;
 }
+
 .card img {
     height: 200px;
     width: 100%;
@@ -65,5 +66,12 @@ export default {
     background: #1e1e1e;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3f4041;
+    /* Darker shade of blue on hover */
 }
 </style>

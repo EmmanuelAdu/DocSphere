@@ -1,5 +1,5 @@
 <template>
-    <v-navigation-drawer v-model="drawer" app color="#2784FF" mini-variant mini-variant-width="80" style="position: fixed; top: 0; left: 0;">
+    <v-navigation-drawer v-model="drawer" app color="#81878f" mini-variant mini-variant-width="80" style="position: fixed; top: 0; left: 0;">
         <v-avatar class="d-block text-center mx-auto mt-4 mb-4" color="" size="40">
             <v-icon :style="{ 'marginLeft': '20px', 'color': 'white !important' }" x-large>fab fa-artstation</v-icon>
         </v-avatar>
@@ -26,8 +26,8 @@ export default {
         selectedItem: 3,
         drawer: null,
         items: [
-            { icon: "fas fa-file-medical-alt" },
             { icon: "fas fa-user-nurse" },
+            { icon: "fas fa-file-medical-alt" },
             { icon: "fas fa-virus" },
             { icon: "fas fa-user-md" },
             { icon: "fas fa-comment-medical" },
@@ -48,7 +48,7 @@ html, body {
 .border {
     margin-left: 12px;
     margin-right: 12px;
-    background: #529DFF;
+    background: #181818;
     border-radius: 50%;
     text-decoration: none;
 }

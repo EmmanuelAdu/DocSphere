@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar color="white" app dark flat class="navbar">
+    <v-app-bar color="#dfe5ed" app dark flat class="navbar">
         <div class="navbar-content">
             <div class="flex items-center">
                 <v-icon :style="{ 'fontSize': '36px' }" color="black">fas fa-long-arrow-alt-left</v-icon>
