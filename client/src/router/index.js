@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HomePage from '@/components/HomePage.vue'; // Correct path to HomePage component
 import Register from '@/components/Register'
 import Login from '@/components/Login'
+import About from '@/components/About.vue'
 import MainApp from '@/components/MainApp.vue'
 
 Vue.use(Router)
@@ -28,6 +29,11 @@ export default new Router({
       path: '/mainApp',
       name: 'MainApp',
       component: MainApp
-    }
+    },
+    {
+      path: '/About',
+      name: 'About',
+      component: About
+    },
   ]
 })

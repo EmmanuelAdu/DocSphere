@@ -5,11 +5,13 @@
       <div class="container">
         <nav>
           <a href="#">
-            <img src="#" alt="brand-logo">
+            <div class="logo">
+              <span style="font-family: Montserrat, sans-serif; color: #292f34;">DocSphere</span>
+            </div>
           </a>
           <ul>
             <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
+            <li><router-link to="/About">About</router-link></li>
             <li><a href="#">HealthTips</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">FAQ</a></li>
@@ -31,7 +33,8 @@
           <div class="hero_content-wrapper">
             <div>
               <h1 class="mb-2"> Connect with certified <span class="gradient-text">doctors</span> anytime, anywhere.</h1>
-              <p class="mb-4">Experience the future of healthcare with our telemedicine app. Quality care, convenient access.
+              <p class="mb-4">Experience the future of healthcare with our telemedicine app. Quality care, convenient
+                access.
                 Say goodbye to waiting rooms! Instantly consult with medical professionals from the comfort of your home.
                 Your health, simplified. Consultations made easy, prescriptions delivered to your doorstep</p>
               <a href="#" class="btn btn-secondary">Get Started</a>
@@ -42,8 +45,10 @@
           </div>
           <div class="info">
             <h3>From minor ailments to mental stress, we've got you covered</h3>
-            <p>Don't let distance be a barrier to good health. Our telemedicine app connects you with top doctors in seconds.
-            <span class="gradient-text">Join</span> the telemedicine revolution. Accessible, affordable, and efficient healthcare for everyone
+            <p>Don't let distance be a barrier to good health. Our telemedicine app connects you with top doctors in
+              seconds.
+              <span class="gradient-text">Join</span> the telemedicine revolution. Accessible, affordable, and efficient
+              healthcare for everyone
             </p>
           </div>
         </div>
@@ -59,4 +64,8 @@ export default {
 }
 </script>
 
-<style lang="css" src="../styles/header.css"></style>
+<style lang="css" src="../styles/header.css">
+.logo {
+  font-size: 5rem;
+}
+</style>

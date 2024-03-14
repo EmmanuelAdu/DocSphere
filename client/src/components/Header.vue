@@ -8,7 +8,9 @@
             <div class="container">
                 <nav>
                     <a href="#">
-                        <img src="#" alt="brand-logo">
+                        <div class="logo">
+                            <span style="font-family: Montserrat, sans-serif; color: #292f34;">DocSphere</span>
+                        </div>
                     </a>
                     <ul>
                         <li><a href="#">Services</a></li>
@@ -31,4 +33,8 @@ export default {
 }
 </script>
 
-<style lang="css" src="../styles/header.css"></style>
+<style lang="css" src="../styles/header.css">
+.logo {
+    font-size: 5rem;
+}
+</style>

@@ -42,6 +42,7 @@
             email: this.email,
             password: this.password
           })
+          this.$router.push('/mainApp');
           // Handle successful registration
         } catch (error) {
           this.error = error.response.data.error
