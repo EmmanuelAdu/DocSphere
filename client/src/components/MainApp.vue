@@ -7,6 +7,7 @@
             <!-- Other content -->
         </div>
         <Contact />
+        <Doctor />
     </div>
 </template>
   
@@ -14,12 +15,14 @@
 import SideBar from './SideBar.vue';
 import Navbar from './Navigation.vue';
 import Contact from './Contact.vue'
+import Doctor from './Doctor.vue'
 
 export default {
     components: {
         SideBar,
         Navbar,
-        Contact
+        Contact,
+        Doctor
     }
 }
 </script>

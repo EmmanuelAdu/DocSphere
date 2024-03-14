@@ -3,7 +3,7 @@
         <div class="navbar-content">
             <div class="flex items-center">
                 <v-icon :style="{ 'fontSize': '36px' }" color="black">fas fa-long-arrow-alt-left</v-icon>
-                <h4 class="black--text ml-3">Patient Card</h4>
+                <h4 class="black--text ml-3">Patient Info</h4>
             </div>
             <v-spacer></v-spacer>
             <div class="patient-history">
@@ -37,7 +37,9 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 100px !important;
+    top: 0 !important;
+    position: sticky;
 }
 
 .navbar-content {
