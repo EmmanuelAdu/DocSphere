@@ -74,7 +74,7 @@ export default {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-left: 100px;
-    background-color: aqua;
+    background-color: rgb(193, 219, 219);
 }
 
 .discover-button {
