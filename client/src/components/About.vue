@@ -1,3 +1,6 @@
+/** File Contains information related to the about page
+ */
+
 <template>
     <div>
         <Header />
@@ -26,8 +29,8 @@
 </template>
   
 <script>
-import Header from './Header.vue'
-import TeamMember from './TeamMember.vue';
+import Header from './Header.vue' // Importing the Header for the page
+import TeamMember from './TeamMember.vue'; // Importing info for all contributors
 
 export default {
     name: 'About',

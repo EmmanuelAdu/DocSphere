@@ -1,3 +1,6 @@
+/** Template for creating a new account
+ */
+
 <template>
   <div>
     <Header/>

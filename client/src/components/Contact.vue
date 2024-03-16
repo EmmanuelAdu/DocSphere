@@ -1,3 +1,6 @@
+/** Template contains the user's contact info after signing in to app
+ */
+
 <template>
     <div class="doctor-profile">
       <div class="profile-image">

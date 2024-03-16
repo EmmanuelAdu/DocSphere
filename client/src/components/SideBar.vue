@@ -1,3 +1,6 @@
+/** Template for vertical Side Bar on main app
+ */
+
 <template>
     <v-navigation-drawer v-model="drawer" app color="#81878f" mini-variant mini-variant-width="80" style="position: fixed; top: 0; left: 0;">
         <v-avatar class="d-block text-center mx-auto mt-4 mb-4" color="" size="40">

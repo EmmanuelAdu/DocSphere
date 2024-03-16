@@ -1,3 +1,6 @@
+/** Template for booking appointment using calendar
+ */
+
 <template>
     <div class="card">
         <img src="../assets/Doctor.jpg" :alt="altText">

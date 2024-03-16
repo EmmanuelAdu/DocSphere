@@ -1,3 +1,5 @@
+/** Template for viewing login page */
+
 <template>
     <div>
       <Header/>
@@ -42,7 +44,7 @@
             email: this.email,
             password: this.password
           })
-          this.$router.push('/mainApp');
+          this.$router.push('/mainApp') // Routes to main application
           // Handle successful registration
         } catch (error) {
           this.error = error.response.data.error

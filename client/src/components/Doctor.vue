@@ -1,3 +1,6 @@
+/** Template for accessing various health professional info
+ */
+
 <template>
     <div>
         <h3><button class="discover-button">Search For Available Doctors</button></h3>

@@ -1,3 +1,6 @@
+/** First Page for landing on site
+ */
+
 <template>
   <div>
     <!-- Header -->

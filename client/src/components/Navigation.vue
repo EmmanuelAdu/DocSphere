@@ -1,3 +1,6 @@
+/** Navigation Bar for main application
+ */
+
 <template>
     <v-app-bar color="#dfe5ed" app dark flat class="navbar">
         <div class="navbar-content">

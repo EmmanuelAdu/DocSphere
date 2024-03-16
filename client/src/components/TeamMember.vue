@@ -1,3 +1,6 @@
+/** Template for accessing team members info
+ */
+
 <template>
     <div class="team-member">
         <img src="../assets/PersonalPhoto.jpg" alt="[Emmanuel] profile picture" />
