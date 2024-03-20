@@ -18,7 +18,7 @@
                 </a>
             </li>
             <li v-if="[twitter_url]">
-                <a :href="[twitter_url]" target="_blank">
+                <a href="https://twitter.com/adu_as10" target="_blank">
                     <i class="fab fa-twitter"></i>
                 </a>
             </li>
